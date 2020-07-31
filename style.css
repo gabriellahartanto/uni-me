@@ -1,0 +1,303 @@
+@font-face {
+  font-family: sfpro;
+  src: url(sfpro.ttf);
+}
+
+@font-face {
+  font-family: sfproblack;
+  src: url(sfprotextblack.otf);
+}
+
+@font-face {
+  font-family: sfprobold;
+  src: url(sfprotextbold.otf);
+}
+
+@font-face {
+  font-family: sfprosemibold;
+  src: url(sfprotextsemibold.otf);
+}
+
+body {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.margin {
+  margin-left: 66px;
+  margin-right: 66px;
+}
+
+.sfproblack {
+  font-family: "sfproblack";
+}
+
+h1 {
+  font-size: 50px;
+  color: navy;
+}
+
+h2 {
+  font-family: "sfprobold";
+  font-size: 40px;
+  color: navy;
+}
+
+h3 {
+  font-family: "sfprobold";
+  font-size: 40px;
+}
+
+p {
+  font-family: "sfpro";
+  font-size: 20px;
+}
+.setengah-header {
+  margin-top: -30px;
+  font-size: 60px;
+}
+
+.opening2 {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 30px 66px;
+  background-color: navy;
+  color: white;
+  position: absolute;
+  z-index: -1;
+}
+
+.isi {
+  margin-top: 100px;
+}
+
+.nav li {
+  display: inline-block;
+  font-family: "sfpro";
+}
+
+#buttons {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  z-index: 1000;
+  width: 100%
+}
+
+a:link {
+  color: navy;
+  background-color: transparent;
+  text-decoration: none;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: 0.3s;
+}
+
+a:visited {
+  color: navy;
+  background-color: transparent;
+  text-decoration: none;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a:hover {
+  color:navy;
+  border-bottom: solid navy;
+  border-width: 3px;
+  background-color: transparent;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+}
+
+a:active {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#home-title {
+  font-family: "sfproblack";
+  font-size: 35px;
+  color: navy;
+  padding-left: 0px;
+}
+
+#home-title:link {
+  color: navy;
+  background-color: transparent;
+  text-decoration: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 750px;
+}
+
+#home-title:visited {
+  color: navy;
+  background-color: transparent;
+  text-decoration: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 750px;
+}
+
+#home-title:hover {
+  color: navy;
+  background-color: transparent;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 750px;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+#home-title:active {
+  color: navy;
+  background-color: transparent;
+  text-decoration: none;
+  border: solid navy;
+  border-width: 2px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 750px;
+}
+
+.start-plan {
+  text-align: center;
+  margin-top: 60px;
+  font-family: "sfprosemibold";
+  font-size: 20px;
+}
+
+#plan-button:link {
+  color: white;
+  background-color: navy;
+  text-decoration: none;
+  border: solid navy;
+  border-width: 2px;
+  padding: 8px 20px;
+  transition: 0.3s;
+}
+
+#plan-button:visited {
+  color: white;
+  background-color: navy;
+  text-decoration: none;
+  border: solid navy;
+  border-width: 2px;
+  padding: 8px 20px;
+}
+
+#plan-button:hover {
+  color: navy;
+  background-color: white;
+  border: solid navy;
+  border-width: 2px;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+
+#plan-button:active {
+  color: white;
+  background-color: navy;
+  text-decoration: none;
+  border: solid navy;
+  border-width: 2px;
+  padding: 8px 20px;
+}
+
+.add-course {
+  text-align: center;
+  margin-top: 60px;
+  margin-left: 0px;
+  font-family: "sfprosemibold";
+  font-size: 30px;
+}
+
+#pre-form {
+  margin-left: 66px;
+  margin-right: 66px;
+  font-family: "sfprobold";
+  color: navy;
+  font-size: 20px;
+}
+
+#students {
+  width: 1425px;
+  position: absolute;
+  z-index: -100;
+}
+
+#start-term, #total-years, #course-code, #course-name, #course-term, #course-delivery, #uoc, #req {
+  margin-left: 20px;
+  margin-bottom: 8px;
+}
+
+.box {
+  margin-top: 50px;
+}
+
+button {
+  color: white;
+  background-color: navy;
+  text-decoration: none;
+  border: solid navy;
+  border-width: 2px;
+  padding: 8px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#form {
+  margin-left: 66px;
+  margin-right: 66px;
+  font-family: "sfprobold";
+  color: navy;
+  font-size: 20px;
+}
+
+#add-course-again, #see {
+  margin-left: 66px;
+  margin-right: 66px;
+}
+
+#here-schedule {
+  font-family: "sfprobold";
+  font-size: 50px;
+}
+
+table {
+  background-color: whitesmoke;
+  color: navy;
+  padding: 30px;
+}
+
+th {
+  font-family: "sfprobold";
+  font-size: 20px;
+  padding-right: 150px;
+}
+
+tr {
+  font-family: "sfpro";
+  font-size: 16px;
+}

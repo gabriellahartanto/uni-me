@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>UniMe</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <ul class="nav margin">
+      <li><a class="margin" id="home-title" href="index.html">UniMe</a></li>
+      <li><a id="buttons" href="index.html">Home</a></li>
+      <li><a id="buttons" href="plan.html">Plan</a></li>
+      <li><a id="buttons" href="contact.html">Contact</a></li>
+      <li><a id="buttons" href="signin.html">Sign In</a></li>
+    </ul>
+    <div class="isi">
+      <form id="pre-form">
+        <label for="start-term" name="start-term">Term</label>
+          <select id="start-term">
+            <option value="1">Term 1</option>
+            <option value="2">Term 2</option>
+            <option value="3">Term 3</option>
+          </select>
+          <br>
+          <label for="total-years" name="total-years">Year</label>
+          <select id="total-years">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          <br>
+          <button type="button" onclick="keepStartData()">Continue</button>
+      </form>
+      <div class="box">
+        <form id="form">
+          <label for="course-code" name="course-code">Code</label>
+          <input type="number" id="course-code">
+          <br>
+          <label for="course-name" name="course-name">Name</label>
+          <input type="text" id="course-name">
+          <br>
+          <label for="course-term" name="course-term">Term</label>
+          <select id="course-term">
+            <option value="1">Term 1</option>
+            <option value="2">Term 2</option>
+            <option value="3">Term 3</option>
+          </select>
+          <br>
+          <label for="course-delivery" name="course-delivery">Delivery Mode</label>
+          <select id="course-delivery">
+            <option value="in-person">In Person</option>
+            <option value="distance-delivery">Distance Delivery</option>
+            <option value="half">Half and Half</option>
+          </select>
+          <br>
+          <label for="uoc" name="uoc">Units of Credit</label>
+          <input type="number" id="uoc">
+          <br>  
+          <label for="req" name="req">Required Course</label>
+          <input type="number" id="req">
+          <br>
+          <button type="button" onclick="getFormInfo(); resetForm()">Add Course</button>
+          <button type="button" onclick="hideShowSchedule(); hideAddCourse(); showAdd()">Done</button>
+          <p id="test"></p>
+        </form>
+        <button style="display:none" id="add-course-again" type="button" onclick="hideShowSchedule(); hideAddCourse(); showAdd()">Add</button>
+        <!-- <button onclick="hideShowSchedule(); hideAddCourse()">Done</button> -->
+        <br>
+        <div id="schedule" style="display: none">
+          <h1 class="margin" id="here-schedule">Here is your schedule.</h1>
+          <!-- <h2>You currently have blabla courses</h2> coba pake span? idk men nanti aja-->
+          <p id="total-courses"></p>
+          <table class="margin" id="table-y1" style="display: none">
+            <tr>
+              <th>Code</th>
+              <th>Name</th>
+              <th>Term</th>
+              <th>Delivery</th>
+              <th>UOC</th>
+              <th>Required</th>
+            </tr>
+          </table>
+          <!-- <table id="table-y2" style="display: none">
+            <tr>
+              <th>Code</th>
+              <th>Name</th>
+              <th>Term</th>
+              <th>Delivery</th>
+              <th>UOC</th>
+              <th>Required</th>
+            </tr>
+          </table>
+          <table id="table-y3" style="display: none">
+            <tr>
+              <th>Code</th>
+              <th>Name</th>
+              <th>Term</th>
+              <th>Delivery</th>
+              <th>UOC</th>
+              <th>Required</th>
+            </tr>
+          </table>
+          <table id="table-y4" style="display: none">
+            <tr>
+              <th>Code</th>
+              <th>Name</th>
+              <th>Term</th>
+              <th>Delivery</th>
+              <th>UOC</th>
+              <th>Required</th>
+            </tr> -->
+          </table>
+          <button id="see" type="button" onclick="finalTable()">See</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
