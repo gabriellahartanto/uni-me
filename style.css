@@ -301,3 +301,10 @@ tr {
   font-family: "sfpro";
   font-size: 16px;
 }
+
+.bio {
+  font-family: "sfpro";
+  margin-top: 10px;
+  font-size: 30px;
+  color: navy;
+}
